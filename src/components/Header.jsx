@@ -1,3 +1,4 @@
+// why useContext?
 import React, { useContext } from "react";
 
 import Link from "next/link";
@@ -24,7 +25,7 @@ const Header = () => {
             </span>
           </Link>
         </div>
-
+                {/* see slug */}
         <div className="hidden md:float-left md:contents">
           {categories.map((category) => (
             <Link key={category.slug} href={`/category/${category.slug}`}>
